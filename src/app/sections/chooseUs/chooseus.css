@@ -1,0 +1,41 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 120px);
+  grid-template-areas: 
+    "personalizacion personalizacion materiales"
+    "personalizacion personalizacion materiales"
+    "flores mano valor"
+    "flores mano valor";
+  gap: 15px;
+}
+
+@media (width < 980px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 100px auto;
+    grid-template-areas: 
+    "personalizacion personalizacion"
+    "personalizacion personalizacion"
+    "materiales flores"
+    "mano valor";
+  }
+}
+
+@media (width < 440px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 100px 100px auto;
+    grid-template-areas: 
+    "personalizacion"
+    "personalizacion"
+    "materiales"
+    "flores"
+    "mano"
+    "valor";
+  }
+}
+
+.content article {
+  border-radius: 10px;
+}

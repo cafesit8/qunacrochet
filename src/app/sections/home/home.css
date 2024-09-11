@@ -1,0 +1,20 @@
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+  border-radius: 100%;
+  padding: 20px;
+  transition: .3s;
+  --swiper-navigation-size: 25px;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background: #14141457;
+  transition: .3s;
+}
+
+.swiper-pagination{
+  --swiper-pagination-color: white;
+}
+
+.swiper-pagination-bullet{
+  background-color: white;
+}
