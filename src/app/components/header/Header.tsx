@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-
+import Link from 'next/link'
 //font source
 import '@fontsource-variable/playfair-display';
 import '@fontsource-variable/roboto-condensed';
@@ -35,14 +35,19 @@ export default function Header () {
         </div>
         <div className='w-full flex justify-between items-center py-2 px-4 bg-white'>
           <Search openMenu={openMenu} />
-            <img className='md:size-32 size-24 aspect-square' width={200} height={200} src="/logo.jpg" alt="logo de qunacrochet" />
+          <img className='md:size-32 size-24 aspect-square' width={200} height={200} src="/logo.jpg" alt="logo de qunacrochet" />
           <Cart />
         </div>
         <nav className='max-w-[1000px] mx-auto flex justify-center items-center md:py-4 py-2'>
           <ul className='md:flex hidden gap-10'>
+            <Link className="font-roboto-condensed uppercase" href={'/arreglos-florales'}>Ramos</Link>
+            <Link className="font-roboto-condensed uppercase" href={'/arreglos-florales'}>Macetas</Link>
+            <Link className="font-roboto-condensed uppercase" href={'/arreglos-florales'}>Personajes Famosos</Link>
             {DropTownItems.map((item, index) => (
               <DropTow key={index} name={item.name} list={item.list} />
             ))}
+            <Link className="font-roboto-condensed uppercase" href={'/arreglos-florales'}>Bebés</Link>
+            <Link className="font-roboto-condensed uppercase" href={'/arreglos-florales'}>Fe</Link>
           </ul>
           <span className='md:hidden block font-roboto-condensed'>Bienvenidos a Qunacrochet</span>
         </nav>
