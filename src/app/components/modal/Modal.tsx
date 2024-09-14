@@ -3,6 +3,7 @@ import type { ModalProps } from './interface'
 import { DropTownItems } from "../header/data/DropTown";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Link from 'next/link'
+import './modal.css'
 
 export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
   return (
@@ -17,6 +18,11 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
         {() => (
           <>
             <ModalBody>
+              <Link className="font-roboto-condensed pl-2 pt-4" href={'/arreglos-florales'}>Ramos</Link>
+              <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Macetas</Link>
+              <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Personajes Famosos</Link>
+              <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Bebés</Link>
+              <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Fe</Link>
               <Accordion
                 motionProps={{
                   variants: {
@@ -59,7 +65,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
                   <AccordionItem
                     key={i}
                     aria-label="Accordion 1"
-                    className="text-white font-roboto-condensed"
+                    className="text-white font-roboto-condensed head"
                     subtitle={
                       <span className="text-sm text-white font-roboto-condensed">
                         {item.name}
