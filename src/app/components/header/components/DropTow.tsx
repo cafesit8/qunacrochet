@@ -7,7 +7,7 @@ export default function DropTow ({ name, list }: DropdownProps) {
   return (
     <Dropdown className='bg-custom-black rounded-none'>
       <DropdownTrigger>
-        <div className='text-[17px] flex gap-2 items-center cursor-pointer'>
+        <div className='text-[17px] flex gap-2 items-center cursor-pointer font-roboto-condensed'>
           {name} <FaChevronDown className="text-white" />
         </div>
       </DropdownTrigger>
