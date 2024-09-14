@@ -17,10 +17,20 @@ export default function Reviews () {
       <div className='max-w-[1010px] mx-auto'>
         <h3 className='text-center font-playfair text-4xl pb-10 uppercase'>Lo que dicen nuestros clientes</h3>
         <Swiper
-          slidesPerView={3}
           spaceBetween={30}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            600: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           }}
           modules={[Pagination]}
           className="mySwiper"
