@@ -18,7 +18,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
         {() => (
           <>
             <ModalBody>
-              <Link className="font-roboto-condensed pl-2 pt-4" href={'/arreglos-florales'}>Ramos</Link>
+              <Link className="font-roboto-condensed pl-2 pt-4" href={'/ramos'}>Ramos</Link>
               <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Macetas</Link>
               <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Personajes Famosos</Link>
               <Link className="font-roboto-condensed pl-2" href={'/arreglos-florales'}>Bebés</Link>
@@ -72,7 +72,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
                       </span>
                     }
                   >
-                    <ul className="flex flex-col gap-4">
+                    <ul className="flex flex-col gap-4 pb-5">
                       {item.list.map((item, index) => (
                         <li key={index} className="text-sm text-white/70 cursor-pointer">
                           <Link href={item.to}>{item.name}</Link>
