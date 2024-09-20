@@ -33,17 +33,21 @@ export const ramos: Ramo[] = [{
     price: '108'
   }],
 }, {
-  subtitle: 'Ramo de 3 tulipanes tejidos a crochet ',
-  description: 'Lindo ramo tejido a crochet que cuenta con estructura alambrada en hojas. Cada tulipán mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷. Puede combinar colores o elegir un solo color, como desee ✨',
+  subtitle: 'Ramo de 3 girasoles tejidos a crochet',
+  description: 'Lindo ramo tejido a crochet que cuenta con estructura alambrada en hojas. Cada Girasol mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷. Puede combinar colores o elegir un solo color, como desee ✨',
   image: [{
     src: '/ramos/3flor/1.jpg',
-    alt: 'ramo de 3 tulipanes de qunacrochet',
+    alt: 'ramo de 3 girasoles de qunacrochet',
     price: '156'
   }, {
     src: '/ramos/3flor/2.jpg',
-    alt: 'ramo de 3 tulipanes de qunacrochet',
+    alt: 'ramo de 3 girasoles de qunacrochet',
     price: '156'
-  }, {
+  }]
+}, {
+  subtitle: 'Ramo de 3 tulipanes tejidos a crochet ',
+  description: 'Lindo ramo tejido a crochet que cuenta con estructura alambrada en hojas. Cada tulipán mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷. Puede combinar colores o elegir un solo color, como desee ✨',
+  image: [{
     src: '/ramos/3flor/3.jpg',
     alt: 'ramo de 3 tulipanes de qunacrochet',
     price: '58'
@@ -69,6 +73,10 @@ export const ramos: Ramo[] = [{
     price: '58'
   }, {
     src: '/ramos/3flor/9.jpg',
+    alt: 'ramo de 3 tulipanes de qunacrochet',
+    price: '58'
+  }, {
+    src: '/ramos/3flor/10.jpg',
     alt: 'ramo de 3 tulipanes de qunacrochet',
     price: '58'
   }],
@@ -108,6 +116,30 @@ export const ramos: Ramo[] = [{
     alt: 'ramo de 6 tulipanes de qunacrochet',
     price: '106'
   }],
+}, {
+  subtitle: 'Ramo de 9 tulipanes tejidos a crochet',
+  description: 'Ramo de tulipanes que lleva al centro una cabeza de Minnie Mouse. Cada tulipán mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷',
+  image: [{
+    src: '/ramos/9flor/1.jpg',
+    alt: 'ramo de 9 tulipanes de qunacrochet',
+    price: '??'
+  }, {
+    src: '/ramos/9flor/2.jpg',
+    alt: 'ramo de 9 tulipanes de qunacrochet',
+    price: '??'
+  }]
+}, {
+  subtitle: 'Ramo de 10 tulipanes tejidos a crochet',
+  description: 'Bello ramo tejido a crochet que cuenta con estructura alambrada en hojas. Cada tulipán mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷',
+  image: [{
+    src: '/ramos/10flor/1.jpg',
+    alt: 'ramo de 10 tulipanes de qunacrochet',
+    price: '??'
+  }, {
+    src: '/ramos/10flor/2.jpg',
+    alt: 'ramo de 10 tulipanes de qunacrochet',
+    price: '??'
+  }]
 }, {
   subtitle: 'Ramo de 12 tulipanes tejidos a crochet',
   description: 'Bello ramo tejido a crochet que cuenta con estructura alambrada en hojas. Cada tulipán mide, aproximadamente, 32 centímetros de largo y están hechos 100% a mano 🌷',
