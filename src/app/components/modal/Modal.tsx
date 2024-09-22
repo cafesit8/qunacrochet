@@ -1,4 +1,3 @@
-'use client'
 import { Modal, ModalContent, ModalBody } from "@nextui-org/modal";
 import type { ModalProps } from './interface'
 import { DropTownItems } from "../header/data/DropTown";
@@ -19,7 +18,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
         {() => (
           <>
             <ModalBody>
-              <Link className="font-roboto-condensed pl-2 text-base pt-4" href={'/ramos'}>Ramos</Link>
+              <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base pt-4" href={'/ramos'}>Ramos</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Personalizados</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Personajes Famosos</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Conócenos</Link>
@@ -75,7 +74,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
                     <ul className="flex flex-col gap-4 pb-5">
                       {item.list.map((item, index) => (
                         <li key={index} className="text-sm text-white/70 cursor-pointer">
-                          <Link href={item.to} onClick={() => console.log('clickl cerra')}>{item.name}</Link>
+                          <Link href={item.to}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>
