@@ -1,29 +1,33 @@
 export const DropTownItems = [{
-  name: 'FLORES',
+  name: 'Ramos Premiun',
   list: [
     {
-      name: 'Orquideas',
+      name: 'Ramos de 10 o más flores',
       to: '/'
     },
     {
-      name: 'Rosas',
+      name: 'Ramos con personajes',
+      to: '/'
+    }  
+  ]
+}, {
+  name: 'Macetas',
+  list: [
+    {
+      name: 'Pequeña',
       to: '/'
     },
     {
-      name: 'Lirios',
+      name: 'Grande',
       to: '/'
     },
     {
-      name: 'Margaritas',
-      to: '/'
-    },
-    {
-      name: 'Claveles',
+      name: 'Extragrande',
       to: '/'
     }
   ]
 }, {
-  name: 'EVENTOS',
+  name: ' Festividades',
   list: [
     {
       name: 'Navidad',
@@ -32,17 +36,9 @@ export const DropTownItems = [{
     {
       name: 'Graduación',
       to: '/'
-    }
-  ]
-}, {
-  name: 'PERSONALIZADOS',
-  list: [
-    {
-      name: 'Mascotas',
-      to: '/'
     },
     {
-      name: 'Personas',
+      name: 'Fe',
       to: '/'
     }
   ]
