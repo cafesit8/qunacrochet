@@ -13,7 +13,8 @@ const config: Config = {
     extend: {
       colors: {
         'custom-black': '#141414',
-        'area-bg': '#dcdcdc'
+        'area-bg': '#dcdcdc',
+        'primary': '#002060'
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
