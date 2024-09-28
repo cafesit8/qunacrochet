@@ -6,12 +6,12 @@ import Reviews from "./sections/reviews/Reviews";
 
 export default function Home () {
   return (
-    <div className="">
+    <>
       <HomeSection />
       <ChooseUs />
       <Reviews />
       <Questions />
       <Instagram />
-    </div>
+    </>
   );
 }

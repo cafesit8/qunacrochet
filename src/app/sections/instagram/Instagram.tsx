@@ -5,16 +5,15 @@ export default function Instagram () {
       <div className="max-w-[1000px] m-auto flex flex-col gap-4">
         <div className="flex justify-between">
           <div className="flex items-center md:gap-4 gap-2">
-            <picture className="block md:w-20 w-14">
+            <picture className="block md:w-52 w-40">
               <img
                 className="w-full h-full object-cover"
-                src="/logo.jpg"
+                src="/logo.webp"
                 width={200}
                 height={200}
                 alt="imagen de arreglos florales de Qunacrochet"
               />
             </picture>
-            <a target="_blank" href="https://www.instagram.com/quna.crochet/" className="font-roboto-condensed text-base font-semibold hover:underline">@quna.crochet</a>
           </div>
           <a target="_blank" href="https://www.instagram.com/quna.crochet/" className="bg-[#0095f6] self-center text-white py-2 px-5 rounded-md font-roboto-condensed">Seguir</a>
         </div>

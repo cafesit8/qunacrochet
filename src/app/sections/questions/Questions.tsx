@@ -47,7 +47,7 @@ export default function Questions () {
             },
           }}
         >
-          <AccordionItem key="1" aria-label="Accordion 1" title="PREGUNTA 1" className="font-roboto-condensed">
+          <AccordionItem key="1" aria-label="Accordion 1" title="Pregunta 1">
             <p className="text-custom-black font-roboto-condensed">{defaultContent}</p>
           </AccordionItem>
           <AccordionItem key="2" aria-label="Accordion 2" title="Pregunta 2">

@@ -34,9 +34,11 @@ export default function Header () {
             <li><a target='_blank' href="_"><RiTiktokFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
           </ul>
         </div>
-        <div className='w-full flex justify-between items-center py-2 px-4 bg-white'>
+        <div className='w-full flex justify-between items-center p-4 bg-white'>
           <Search openMenu={openMenu} />
-            <img className='md:size-32 size-24 aspect-square' width={200} height={200} src="/logo.jpg" alt="logo de qunacrochet" />
+            <Link href={'/'}>
+              <img className='md:w-64 w-40' src="/logo.webp" alt="logo de qunacrochet" />
+            </Link>
           <Cart />
         </div>
         <nav className='max-w-[1000px] mx-auto flex justify-center items-center md:py-4 py-2'>
@@ -46,9 +48,8 @@ export default function Header () {
             {DropTownItems.map((item, index) => (
               <DropTow key={index} name={item.name} list={item.list} />
             ))}
-            <Link className="font-roboto-condensed uppercase text-center" href={'/arreglos-florales'}>Personalizados</Link>
-            <Link className="font-roboto-condensed uppercase text-center" href={'/arreglos-florales'}>Personajes Famosos</Link>
-            <Link className="font-roboto-condensed uppercase text-center" href={'/arreglos-florales'}>Conócenos</Link>
+            <Link className="font-roboto-condensed uppercase text-center" href={'/personalizados'}>Personalizados</Link>
+            <Link className="font-roboto-condensed uppercase text-center" href={'/'}>Conócenos</Link>
           </ul>
           <span className='md:hidden block font-roboto-condensed'>Bienvenidos a Qunacrochet</span>
         </nav>

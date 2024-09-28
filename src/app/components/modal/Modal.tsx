@@ -75,7 +75,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
                     <ul className="flex flex-col gap-4 pb-5">
                       {item.list.map((item, index) => (
                         <li key={index} className="text-sm text-white/70 cursor-pointer">
-                          <Link href={item.to}>{item.name}</Link>
+                          <Link onClick={() => onOpenChange(false)} href={item.to}>{item.name}</Link>
                         </li>
                       ))}
                     </ul>

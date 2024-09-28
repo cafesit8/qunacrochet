@@ -19,15 +19,15 @@ export const DropTownItems = [{
   list: [
     {
       name: 'Navidad',
-      to: '/'
+      to: '/festividades/navidad'
     },
     {
       name: 'Graduación',
-      to: '/'
+      to: '/festividades/graduacion'
     },
     {
       name: 'Fe',
-      to: '/'
+      to: '/festividades/fe'
     }
   ]
 }]
