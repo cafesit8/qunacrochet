@@ -42,6 +42,7 @@ export default function Header () {
         <nav className='max-w-[1000px] mx-auto flex justify-center items-center md:py-4 py-2'>
           <ul className='md:flex hidden gap-10 items-center'>
             <Link className="font-roboto-condensed uppercase text-center" href={'/ramos'}>Ramos</Link>
+            <Link className="font-roboto-condensed uppercase text-center" href={'/ramos-premiun'}>Ramos Premiun</Link>
             {DropTownItems.map((item, index) => (
               <DropTow key={index} name={item.name} list={item.list} />
             ))}

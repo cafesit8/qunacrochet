@@ -19,6 +19,7 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
           <>
             <ModalBody>
               <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base pt-4" href={'/ramos'}>Ramos</Link>
+              <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base" href={'/ramos-premiun'}>Ramos Premiun</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Personalizados</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Personajes Famosos</Link>
               <Link className="font-roboto-condensed pl-2 text-base" href={'/arreglos-florales'}>Conócenos</Link>

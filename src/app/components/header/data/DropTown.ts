@@ -1,29 +1,17 @@
 export const DropTownItems = [{
-  name: 'Ramos Premiun',
-  list: [
-    {
-      name: 'Ramos de 10 o más flores',
-      to: '/'
-    },
-    {
-      name: 'Ramos con personajes',
-      to: '/'
-    }  
-  ]
-}, {
   name: 'Macetas',
   list: [
     {
       name: 'Pequeña',
-      to: '/'
+      to: '/macetas/pequena'
     },
     {
       name: 'Grande',
-      to: '/'
+      to: '/macetas/grande'
     },
     {
       name: 'Extragrande',
-      to: '/'
+      to: '/macetas/extragrande'
     }
   ]
 }, {
