@@ -15,7 +15,7 @@ export const macetas_extragrandes: Product[] = [{
   subtitle: 'Maceta con once flores y cuatro abejitas a crochet',
   description: 'Bellísima maceta, una de las más grandes, ideal para un centro de mesa, salas u otro lugar en el que se desee decorar con diversas flores eternas 💐. Las flores cuentan con estructura alambrada en tallo y hojas ✨. Todo el diseño mide 30 centímetros de alto x 30 centímetros de ancho, aproximadamente 🧶',
   list: ['1 girasol', '1 rosa (color a elección)', '1 lirio (color a elección)', '5 tulipanes (colores a elección)', '2 margaritas', '1 lavanda', '4 abejitas'],
-  price: '65.00',
+  price: '399.00',
   image: [{
     src: '/macetas/extragrande/11flores/1.webp',
     alt: 'maceta extragrande de qunacrochet'
