@@ -1,6 +1,6 @@
-import type { Ramo } from '@/app/(pages)/interface/Ramo'
+import type { Product } from '@/app/(pages)/interface/Product'
 
-export const ramos_premiun: Ramo[] = [{
+export const ramos_premiun: Product[] = [{
   subtitle: 'Bouquet de 14 flores y 2 abejitas tejidas a crochet',
   description: 'Fabulosa combinación de flores y abejitas que puedes personalizar. El ramo cuenta con:',
   list: ['3 girasoles', '2 rosas (colores a elección)', '3 tulipanes (colores a elección)', '3 margaritas', '3 lavandas', '2 abejitas'],

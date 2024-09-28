@@ -1,6 +1,6 @@
-import { Ramo } from "../../interface/Product";
+import { Product } from "../../interface/Product";
 
-export const ramos: Ramo[] = [{
+export const ramos: Product[] = [{
   subtitle: 'Ramo de 1 girasol tejido a crochet',
   description: 'Regala esta hermosa flor tejida a crochet que cuenta con estructura alambrada en tallo y hojas. La flor mide, aproximadamente, 35 centímetros de largo y está hecha 100% a mano 🌻',
   price: '58.00',
