@@ -26,6 +26,13 @@ export default function SectionImages (product: Product) {
     <section className="pt-16">
       <h3 className="md:text-4xl text-2xl font-medium font-playfair" style={{ lineHeight: '1' }}>{product.subtitle}</h3>
       <p className='md:text-base text-sm my-2 text-balance'>{product.description}</p>
+      {product.list && (
+        <ul>
+          {product.list.map((item: string, i: number) => (
+            <li key={i} className="md:text-base text-sm my-2 text-balance list-disc ml-5">{item}</li>
+          ))}
+        </ul>
+      )}
       <div className="flex">
         <span className="bg-green-100 text-green-800 text-base font-semibold font-roboto-condensed me-2 px-2.5 py-1 rounded-full">
           S/ {product.price}
