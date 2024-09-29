@@ -1,6 +1,7 @@
 import { Product } from "../../interface/Product";
 
 export const personalizados: Product[] = [{
+  id: crypto.randomUUID(),
   subtitle: 'Personas personalizadas',
   description: '¡Tejemos a crochet a tu persona favorita! 🤗',
   price: '120.00',
@@ -30,6 +31,7 @@ export const personalizados: Product[] = [{
     alt: 'Personas personalizadas',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Mascotas personalizadas',
   description: '¡Tejemos a crochet a tu querida mascorita! 🐶🐱🐹🐎. Los modelos tienen 20 centímetros de alto y están elaborados con hilos de algodón ✨. Si desea un tamaño más grande o más pequeño, nos indica para cotizarlo 🧶',
   price: '140.00',

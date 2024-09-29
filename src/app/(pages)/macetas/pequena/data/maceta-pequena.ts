@@ -1,6 +1,7 @@
 import type { Product } from "@/app/(pages)/interface/Product";
 
 export const maceta_pequena: Product[] = [{
+  id: crypto.randomUUID(),
   subtitle: 'Girasol en maceta a crochet',
   description: 'Linda y especial opción de regalo. Un bello girasol que cuenta con estructura alambrada en tallo y hojas en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌻. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomenda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '60.00',
@@ -42,6 +43,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'girasol en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Margarita en maceta a crochet',
   description: 'Una linda margarita que cuenta con estructura alambrada en tallo, hojas y pétalos, en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌱. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomenda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '60.00',
@@ -56,6 +58,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'margarita en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Par de margaritas en maceta a crochet',
   description: 'Dos bellas margarita que cuentan con estructura alambrada en tallo, hojas y pétalos, en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌱. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomenda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '75.00',
@@ -70,6 +73,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'par de margaritas en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Par de margaritas y abejita en maceta a crochet',
   description: 'Lindas margaritas que cuentan con estructura alambrada en tallo, hojas y pétalos, acompañadas de una tierna abejita. Todo en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌱. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomenda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '80.00',
@@ -81,6 +85,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'par de margaritas y abejita en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Tulipán en maceta a crochet',
   description: 'Bello tulipán que cuenta con estructura alambrada en tallo y hojas en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌷. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomienda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '50.00',
@@ -104,6 +109,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'tulipán en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Mini flores en maceta a crochet',
   description: 'Lindas florcitas tejidas a crochet que cuentan con estructura alambrada en tallo y hojas en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🧶. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomienda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '70.00',
@@ -118,6 +124,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'mini flores en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Par de lirios en maceta a crochet',
   description: 'Dos elegantes lirios que cuentan con estructura alambrada en tallo, hojas y pétalos, en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌸. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomienda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '80.00',
@@ -135,6 +142,7 @@ export const maceta_pequena: Product[] = [{
     alt: 'par de lirios en maceta a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Rosa en maceta a crochet',
   description: 'Linda rosa que cuenta con estructura alambrada en tallo y hojas en una macetita tejida. Todo el diseño mide entre 16 a 18 centímetros de alto 🌹. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre (se recomienda corto para este tamaño de maceta), tiene un costo adicional según la cantidad de letras.',
   price: '60.00',

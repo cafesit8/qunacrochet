@@ -1,6 +1,7 @@
 import { Product } from "@/app/(pages)/interface/Product";
 
 export const navidad: Product[] = [{
+  id: crypto.randomUUID(),
   subtitle: 'Sagrada familia a crochet',
   description: 'Bello nacimiento tejido a crochet elaborado con hilos de algodón y de 3 personajes (puede elegir los colores de las prendas) ✨',
   list: ['San José (22 centímetros)', 'Virgen María (20 centímetros)', 'Bebé Jesús (10 centímetros)'],
@@ -10,6 +11,7 @@ export const navidad: Product[] = [{
     alt: 'Sagrada familia a crochet',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Virgen María y San José',
   description: 'Puede elegir los colores de las prendas ✨',
   price: '188.00',
@@ -19,6 +21,7 @@ export const navidad: Product[] = [{
     alt: 'Virgen María y José',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Nacimiento con 6 personajes',
   description: 'Puede elegir los colores de las prendas ✨',
   price: '310.00',
@@ -34,6 +37,7 @@ export const navidad: Product[] = [{
     alt: 'Nacimiento con 6 personajes',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Nacimiento con 7 personajes',
   description: 'Puede elegir los colores de las prendas ✨',
   list: ['San José (22 centímetros)', 'Virgen María (20 centímetros)', 'Bebé Jesús (10 centímetros)', 'Angelita (14 centímetros)', 'Vaquita (9 centímetros)', 'Burrito (9 centímetros)', 'Ovejita (8 centímetros)'],
@@ -46,6 +50,7 @@ export const navidad: Product[] = [{
     alt: 'Nacimiento con 7 personajes',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Nacimiento con 8 personajes',
   description: 'Puede elegir los colores de las prendas ✨',
   list: ['San José (22 centímetros)', 'Virgen María (20 centímetros)', 'Bebé Jesús (10 centímetros)', 'Angelita (14 centímetros)', 'Vaquita (9 centímetros)', 'Burrito (9 centímetros)', '2 Ovejitas (8 centímetros)'],
@@ -64,6 +69,7 @@ export const navidad: Product[] = [{
     alt: 'Nacimiento con 8 personajes',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Personajes entrañables de la Navidad',
   description: 'Elaborados con hilos de algodón y con detalles en macramé. Son realmente adorables. Una excelente opción de regalo o decoración con los finos acabamos de Quna.Crochet✨',
   list: ['Papa Noel (30 centímetros de alto)', 'Rodolfo el reno (30 centímetros de alto)'],
@@ -76,6 +82,7 @@ export const navidad: Product[] = [{
     alt: 'Personaje entrañable de la Navidad',
   }]
 }, {
+  id: crypto.randomUUID(),
   subtitle: 'Hombre de nieve',
   description: 'Elaborados con hilos de algodón y con detalles en macramé. Son realmente adorables. Una excelente opción de regalo o decoración con los finos acabamos de Quna.Crochet✨',
   list: ['Hombre de nieve (26 centímetros de alto)'],
