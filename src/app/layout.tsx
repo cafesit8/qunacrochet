@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./sections/footer/Footer";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Quna.Crochet",
@@ -22,6 +23,7 @@ export default function RootLayout ({
             {children}
           </main>
           <Footer />
+          <Toaster richColors position="top-right" />
         </div>
       </body>
     </html>

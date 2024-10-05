@@ -2,6 +2,7 @@
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/dropdown";
 import { FaChevronDown } from "react-icons/fa";
 import type { DropdownProps } from './interface'
+import Link from "next/link";
 
 export default function DropTow ({ name, list }: DropdownProps) {
   return (
@@ -13,8 +14,8 @@ export default function DropTow ({ name, list }: DropdownProps) {
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
         {list.map((item, index) => (
-          <DropdownItem className="uppercase" href={item.to} key={index}>
-            {item.name}
+          <DropdownItem className="uppercase" key={index}>
+            <Link href={item.to} className="w-full">{item.name}</Link>
           </DropdownItem>
         ))}
       </DropdownMenu>

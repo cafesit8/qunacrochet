@@ -11,7 +11,11 @@
   "dependencies": {
     "@fontsource-variable/playfair-display": "5.0.26",
     "@fontsource-variable/roboto-condensed": "5.0.4",
+    "@internationalized/date": "3.5.6",
     "@nextui-org/accordion": "^2.0.38",
+    "@nextui-org/badge": "2.0.32",
+    "@nextui-org/button": "2.0.38",
+    "@nextui-org/date-picker": "2.1.8",
     "@nextui-org/dropdown": "2.1.29",
     "@nextui-org/input": "^2.2.4",
     "@nextui-org/modal": "2.0.39",
@@ -23,7 +27,9 @@
     "photoswipe": "^5.4.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "7.53.0",
     "react-icons": "^5.3.0",
+    "sonner": "1.5.0",
     "swiper": "^11.1.12",
     "zustand": "5.0.0-rc.2"
   },
