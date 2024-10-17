@@ -10,6 +10,9 @@ export interface ProductItem {
   date: string
   name: string
   surname: string
+  district: string
+  province: string
+  number: number
 }
 
 export default function CartPage () {
@@ -38,11 +41,22 @@ export default function CartPage () {
 
 
   function sendData (data: ProductItem) {
-    const { address, date, name, surname } = data
-    let message = `Hola, le escribe ${name} ${surname}, quisiera que por favor, me envíen a esta dirección ${address} con esta fecha ${date}, siendo un total de S/${calculateTotal()} por los siguientes productos:\n\n`;
+    const { address, date, name, surname, district, province, number } = data;
+
+    let message = `Hola, Quna.Crochet✨\n`;
+    message += `Deseo comprar los siguientes productos:\n\n`;
+
     cartItems.forEach(product => {
       message += `• ${product.subtitle}:\n   cantidad: ${product.quantity}\n   precio: S/. ${Number(product.price) * product.quantity}\n`;
     });
+
+    message += `\nLo deseo para el ${date}\n\n`;
+    message += `Mis datos son:\n`;
+    message += `- Nombre Completo: ${name} ${surname}\n`;
+    message += `- Número: ${number}\n`;
+    message += `- Dirección: ${address}\n`;
+    message += `- Distrito y provincia (${district}, ${province})\n`;
+
     const encodedMessage = encodeURIComponent(message);
     const phoneNumber = "+51994986182";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
