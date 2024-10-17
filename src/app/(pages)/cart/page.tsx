@@ -1,10 +1,11 @@
 'use client'
 import { useStore } from "@/app/global/state"
-import ProductItem from "./components/Product";
 import { useState } from "react";
 import Form from './components/Form'
+import Products from "./sections/Products";
+import NoProducts from "./sections/NoProducts";
 
-export interface Product {
+export interface ProductItem {
   address: string
   date: string
   name: string
@@ -13,11 +14,16 @@ export interface Product {
 
 export default function CartPage () {
   const productsList = useStore((state) => state.products)
-  const removeProduct = useStore((state) => state.removeProduct)
   const [cartItems, setCartItems] = useState(productsList.map(product => ({
     ...product,
     quantity: 1,
   })));
+
+  function calculateTotal () {
+    return cartItems.reduce((total, item) => total + Number(item.price) * item.quantity, 0);
+  }
+
+  const removeProduct = useStore((state) => state.removeProduct)
 
   function handleRemoveProduct (productId: string) {
     removeProduct(productId);
@@ -30,11 +36,8 @@ export default function CartPage () {
     ));
   }
 
-  function calculateTotal () {
-    return cartItems.reduce((total, item) => total + Number(item.price) * item.quantity, 0);
-  }
 
-  function sendData (data: Product) {
+  function sendData (data: ProductItem) {
     const { address, date, name, surname } = data
     let message = `Hola, le escribe ${name} ${surname}, quisiera que por favor, me envíen a esta dirección ${address} con esta fecha ${date}, siendo un total de S/${calculateTotal()} por los siguientes productos:\n\n`;
     cartItems.forEach(product => {
@@ -48,17 +51,17 @@ export default function CartPage () {
   }
 
   return (
-    <div className="w-full [min-height:calc(100vh-315px)] bg-white text-custom-black py-10">
+    <div className="w-full [min-height:calc(100vh-320px)] bg-white text-custom-black py-10">
       <div className="max-w-[1300px] m-auto px-4 flex flex-col gap-10">
         <h1 className="md:text-6xl text-4xl text-center font-playfair">Carrito de Compras</h1>
         <main className="flex md:flex-row flex-col gap-10">
-          <section className="md:w-4/6 w-full flex flex-col">
-            {productsList.map((product) => (
-              <ProductItem key={product.id} product={product} updateQuantity={updateQuantity} removeProduct={handleRemoveProduct} />
-            ))}
-          </section>
+          {cartItems.length > 0 ? (
+            <Products productsList={cartItems} updateQuantity={updateQuantity} handleRemoveProduct={handleRemoveProduct} />
+          ) : (
+            <NoProducts />
+          )}
           <aside className="md:w-2/6 w-full">
-            <Form sendData={sendData} total={calculateTotal()} />
+            <Form productsList={productsList} sendData={sendData} total={calculateTotal()} />
           </aside>
         </main>
       </div>

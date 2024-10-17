@@ -10,4 +10,5 @@ export interface Product {
   list?: string[]
   image: Image[]
   price: string
+  princeTo?: string
 }

@@ -3,10 +3,11 @@ import { DatePicker } from '@nextui-org/date-picker'
 import { Button } from '@nextui-org/button'
 import { FaWhatsapp } from "react-icons/fa6";
 import { useForm } from 'react-hook-form'
-import type { Product } from '../page';
+import type { ProductItem } from '../page';
+import type { Product } from '@/app/(pages)/interface/Product';
 
-export default function Form ({ total, sendData }: { total: number, sendData: (data: Product) => void }) {
-  const { register, handleSubmit, formState: { errors }, setValue, trigger } = useForm<Product>()
+export default function Form ({ total, sendData, productsList }: { total: number, sendData: (data: ProductItem) => void, productsList: Product[] }) {
+  const { register, handleSubmit, formState: { errors }, setValue, trigger } = useForm<ProductItem>()
 
   return (
     <form onSubmit={handleSubmit(sendData)}>
@@ -67,7 +68,7 @@ export default function Form ({ total, sendData }: { total: number, sendData: (d
         <span>Total:</span>
         <span className='font-roboto-condensed'>S/. {total}</span>
       </div>
-      <Button type='submit' isDisabled={Object.keys(errors).length > 0} className='bg-[#28d367] font-roboto-condensed text-lg w-full text-white' endContent={<FaWhatsapp />}>
+      <Button type='submit' isDisabled={productsList.length === 0 || Object.keys(errors).length > 0} className='bg-[#28d367] font-roboto-condensed text-lg w-full text-white' endContent={<FaWhatsapp />}>
         Solicitar
       </Button>
     </form>

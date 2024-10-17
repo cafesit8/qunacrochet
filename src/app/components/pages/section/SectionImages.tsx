@@ -12,14 +12,16 @@ export default function SectionImages (product: Product) {
   const productsList = useStore((state) => state.products);
   const addProduct = useStore((state) => state.addProduct);
 
-  function addProductFn() {
+  function addProductFn () {
     const productFound = productsList.find((item) => item.id === product.id)
     if (productFound) {
       toast.info('Ya existe en el carrito')
       return
     }
     addProduct(product)
-    toast.success('Añadido al carrito')
+    toast.success('Añadido al carrito', {
+      duration: 1500
+    })
   }
 
   useEffect(() => {
@@ -37,7 +39,7 @@ export default function SectionImages (product: Product) {
   }, []);
 
   return (
-    <section className="pt-16">
+    <section className="pt-16" style={{ contentVisibility: 'auto' }}>
       <h3 className="md:text-4xl text-2xl font-medium font-playfair" style={{ lineHeight: '1' }}>{product.subtitle}</h3>
       <p className='md:text-base text-sm my-2 text-balance'>{product.description}</p>
       {product.list && (
@@ -48,9 +50,21 @@ export default function SectionImages (product: Product) {
         </ul>
       )}
       <div className="flex">
-        <span className="bg-green-100 text-green-800 md:text-base text-sm font-semibold font-roboto-condensed me-2 px-2.5 py-1 rounded-full">
-          S/ {product.price}
-        </span>
+        {product.princeTo ? (
+          <>
+            <span className="bg-green-100 text-green-800 md:text-base text-sm font-semibold font-roboto-condensed me-2 px-2.5 py-1 rounded-full">
+              S/ {product.price}
+            </span>
+            -
+            <span className="bg-green-100 text-green-800 md:text-base text-sm font-semibold font-roboto-condensed ms-2 me-2 px-2.5 py-1 rounded-full">
+              S/ {product.princeTo}
+            </span>
+          </>
+        ) : (
+          <span className="bg-green-100 text-green-800 md:text-base text-sm font-semibold font-roboto-condensed me-2 px-2.5 py-1 rounded-full">
+            S/ {product.price}
+          </span>
+        )}
         <button onClick={addProductFn} className="bg-[#ceedff] font-roboto-condensed flex items-center gap-1 py-1 px-4 rounded-md md:text-base text-sm hover:bg-[#a7e1ff] duration-200">
           <span>Agregar al carrito</span>
           <FaShoppingCart />

@@ -49,7 +49,7 @@ export default function Header () {
               <DropTow key={index} name={item.name} list={item.list} />
             ))}
             <Link className="font-roboto-condensed uppercase text-center" href={'/personalizados'}>Personalizados</Link>
-            <Link className="font-roboto-condensed uppercase text-center" href={'/'}>Conócenos</Link>
+            <Link className="font-roboto-condensed uppercase text-center" href={'/personajes-famosos'}>Personajes Famosos</Link>
           </ul>
           <span className='md:hidden block font-roboto-condensed'>Bienvenidos a Qunacrochet</span>
         </nav>

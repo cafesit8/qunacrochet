@@ -20,8 +20,8 @@ export default function ModalMenu ({ isOpen, onOpenChange }: ModalProps) {
             <ModalBody>
               <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base pt-4" href={'/ramos'}>Ramos</Link>
               <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base" href={'/ramos-premiun'}>Ramos Premiun</Link>
-              <Link className="font-roboto-condensed pl-2 text-base" href={'/personalizados'}>Personalizados</Link>
-              <Link className="font-roboto-condensed pl-2 text-base" href={'/'}>Conócenos</Link>
+              <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base" href={'/personalizados'}>Personalizados</Link>
+              <Link onClick={() => onOpenChange(false)} className="font-roboto-condensed pl-2 text-base" href={'/personajes-famosos'}>Personajes Famosos</Link>
               <Accordion
                 motionProps={{
                   variants: {

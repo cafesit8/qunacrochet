@@ -15,7 +15,7 @@ export default function DropTow ({ name, list }: DropdownProps) {
       <DropdownMenu aria-label="Static Actions">
         {list.map((item, index) => (
           <DropdownItem className="uppercase" key={index}>
-            <Link href={item.to} className="w-full">{item.name}</Link>
+            <Link href={item.to} className="block w-full">{item.name}</Link>
           </DropdownItem>
         ))}
       </DropdownMenu>
