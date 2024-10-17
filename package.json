@@ -1,12 +1,14 @@
 {
   "name": "qunacrochet",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "convert-images": "node public/ramos/convert.js"
   },
   "dependencies": {
     "@fontsource-variable/playfair-display": "5.0.26",
@@ -29,6 +31,7 @@
     "react-dom": "^18",
     "react-hook-form": "7.53.0",
     "react-icons": "^5.3.0",
+    "sharp": "^0.33.5",
     "sonner": "1.5.0",
     "swiper": "^11.1.12",
     "zustand": "5.0.0-rc.2"
