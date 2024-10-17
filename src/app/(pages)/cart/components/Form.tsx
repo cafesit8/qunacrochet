@@ -41,6 +41,37 @@ export default function Form ({ total, sendData, productsList }: { total: number
         />
       </div>
       <div>
+        <Input
+          fullWidth
+          size="sm"
+          label="Provincia"
+          isInvalid={Boolean(errors.province)}
+          errorMessage="Debe ingresar su distrito"
+          {...register('province', { required: true })}
+        />
+      </div>
+      <div>
+        <Input
+          fullWidth
+          size="sm"
+          label="Distrito"
+          isInvalid={Boolean(errors.district)}
+          errorMessage="Debe ingresar su distrito"
+          {...register('district', { required: true })}
+        />
+      </div>
+      <div>
+        <Input
+          fullWidth
+          size="sm"
+          label="Número"
+          type='number'
+          isInvalid={Boolean(errors.number)}
+          errorMessage="Ingrese un número válido"
+          {...register('number', { required: true, minLength: 9, maxLength: 9 })}
+        />
+      </div>
+      <div>
         <DatePicker
           label="Día de entrega"
           className="w-full"
