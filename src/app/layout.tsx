@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import Header from "./components/header/Header";
 import Footer from "./sections/footer/Footer";
 import { Toaster } from "sonner";
 import Head from "next/head";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Quna.Crochet",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   referrer: "origin-when-cross-origin",
-  keywords: ['quna', 'quenacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas']
+  keywords: ['quna', 'qunacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas', 'tejidos']
 };
 
 export default function RootLayout ({
