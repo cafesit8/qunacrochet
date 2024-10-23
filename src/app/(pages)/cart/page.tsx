@@ -43,7 +43,7 @@ export default function CartPage () {
   function sendData (data: ProductItem) {
     const { address, date, name, surname, district, province, number } = data;
 
-    let message = `Hola, Quna.Crochet✨\n`;
+    let message = `Hola, Quna.Crochet ✨\n`;
     message += `Deseo comprar los siguientes productos:\n\n`;
 
     cartItems.forEach(product => {
