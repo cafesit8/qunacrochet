@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "convert-images": "node public/ramos/convert.js"
+    "convert-images": "node public/convert.js"
   },
   "dependencies": {
     "@fontsource-variable/playfair-display": "5.0.26",

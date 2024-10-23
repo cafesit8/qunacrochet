@@ -22,7 +22,7 @@ export default function HomeSection () {
             <div className='relative z-10! text-white font-playfair flex justify-center items-center flex-col px-10'>
               <p className='md:text-4xl text-lg'>{section.subtitle}</p>
               <h1 className='md:text-7xl text-4xl text-center'>{section.title}</h1>
-              <button className='bg-custom-black py-2 md:px-7 px-5 rounded-sm md:text-xl text-lg mt-5 hover:scale-110 duration-150'><Link href="/arreglos-florales">Ver más</Link></button>
+              <button className='bg-custom-black py-2 md:px-7 px-5 rounded-sm md:text-xl text-lg mt-5 hover:scale-110 duration-150'><Link href={section.link}>Ver más</Link></button>
             </div>
           </SwiperSlide>
         ))}

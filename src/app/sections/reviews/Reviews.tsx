@@ -10,6 +10,7 @@ import './revies.css'
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { reviews } from './data/reviews';
 
 export default function Reviews () {
   return (
@@ -27,23 +28,27 @@ export default function Reviews () {
             },
             600: {
               slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
+            }
           }}
           modules={[Pagination]}
           className="mySwiper"
           style={{ padding: '10px' }}
         >
-          {[...Array(5)].map((_, i) => (
+          {reviews.map((info, i) => (
             <SwiperSlide key={i}>
-              <article className='h-auto text-center p-5 shadow-lg rounded-md'>
-                <p className='text-pretty'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet asperiores ea possimus quidem commodi! Sequi laboriosam, quisquam fuga inventore est cumque blanditiis enim maiores dolor laudantium harum asperiores animi ipsam.</p>
-                <strong className='text-lg'>Novak Djokovic</strong>
-                <footer className='flex justify-center'>
-                  {[...Array(5)].map((_, i) => <MdOutlineStar className='text-[#f3bd49]' key={i} size={20} />)}
-                </footer>
+              <article className='p-6 flex flex-col items-center space-y-4 shadow-lg border rounded-md'>
+                <picture className='w-full h-[320px] rounded-md overflow-hidden block'>
+                  <img className="w-full h-full object-cover" src={info.image} alt={info.name} />
+                </picture>
+                <div className='flex flex-col justify-center items-center'>
+                  <p className='text-pretty text-center'>{info.opinion}</p>
+                  <div className='mt-2'>
+                    <strong className='text-lg'>{info.name}</strong>
+                    <footer className='flex justify-center'>
+                      {[...Array(5)].map((_, i) => <MdOutlineStar className='text-[#f3bd49]' key={i} size={20} />)}
+                    </footer>
+                  </div>
+                </div>
               </article>
             </SwiperSlide>
           ))}

@@ -2,8 +2,8 @@ import sharp from "sharp";
 import fs from 'fs'
 import path from 'path'
 
-const inputDir = './public/ramos/rosa-5';
-const outputDir = './public/ramos/rosa-5-2';
+const inputDir = './';
+const outputDir = './';
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir);
