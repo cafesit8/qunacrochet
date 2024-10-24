@@ -2,21 +2,6 @@ import { Product } from "../../interface/Product";
 
 export const ramos: Product[] = [{
   id: crypto.randomUUID(),
-  subtitle: 'Ramo de 1 girasol tejido a crochet',
-  description: 'Regala esta hermosa flor tejida a crochet que cuenta con estructura alambrada en tallo y hojas. La flor mide, aproximadamente, 35 centímetros de largo y está hecha 100% a mano 🌻',
-  price: '58.00',
-  image: [{
-    src: '/ramos/1flor/1.webp',
-    alt: 'ramo de 1 girasol de qunacrochet',
-  }, {
-    src: '/ramos/1flor/2.webp',
-    alt: 'ramo de 1 girasol de qunacrochet',
-  }, {
-    src: '/ramos/1flor/3.webp',
-    alt: 'ramo de 1 girasol de qunacrochet',
-  }],
-}, {
-  id: crypto.randomUUID(),
   subtitle: 'Bouquet de 2 flores tejidas a crochet',
   description: 'Cada tulipán o margarita mide 32 centímetros aprox y el girasol mide 35 centímetros aprox. Están elaborados 100% a mano. Bella combinación de dos flores tejidas. El ramo cuenta con:',
   list: ['1 girasol', '1 margarita o 1 tulipán (colores a elección)'],
@@ -287,6 +272,21 @@ export const ramos: Product[] = [{
   }, {
     src: '/ramos/margarita-12/3.webp',
     alt: 'ramo de 12 margaritas de qunacrochet',
+  }],
+}, {
+  id: crypto.randomUUID(),
+  subtitle: 'Ramo de 1 girasol tejido a crochet',
+  description: 'Regala esta hermosa flor tejida a crochet que cuenta con estructura alambrada en tallo y hojas. La flor mide, aproximadamente, 35 centímetros de largo y está hecha 100% a mano 🌻',
+  price: '58.00',
+  image: [{
+    src: '/ramos/1flor/1.webp',
+    alt: 'ramo de 1 girasol de qunacrochet',
+  }, {
+    src: '/ramos/1flor/2.webp',
+    alt: 'ramo de 1 girasol de qunacrochet',
+  }, {
+    src: '/ramos/1flor/3.webp',
+    alt: 'ramo de 1 girasol de qunacrochet',
   }],
 }, {
   id: crypto.randomUUID(),

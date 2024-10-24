@@ -30,7 +30,7 @@ export default function Header () {
           <ul className='flex gap-3'>
             <li><a target='_blank' href="https://www.facebook.com/profile.php?id=100066974342612&mibextid=ZbWKwL"><MdOutlineFacebook className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
             <li><a target='_blank' href="https://www.instagram.com/quna.crochet?igsh=djB0enVtbXllZ2E4"><RiInstagramFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
-            <li><a target='_blank' href="https://wa.me/c/51983214218?fbclid=PAZXh0bgNhZW0CMTEAAaa2m4rbMJM73iYxp59u9Izga3vJBN0mUB7Ssl8k3IUqJwj6_gbvfAV3RRE_aem_AQxRz9jZd7wPNeA2PJQJsOo3X55IYqveDak125Xq_CHdyWMLhd14IlM_MjCNmA6QSUpy07US7KON7M-ntvrVoRTv."><RiWhatsappFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
+            <li><a target='_blank' href="https://wa.me/51983214218?text=Hola%2C%20Quna.Crochet%20%E2%9C%A8%0AHe%20visto%20su%20p%C3%A1gina%20y%20deseo%20consultar%20sobre%20un%20producto."><RiWhatsappFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
             <li><a target='_blank' href="https://www.tiktok.com/@quna.crochet?_t=8qkGthWXHgz&_r=1 "><RiTiktokFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
           </ul>
         </div>
