@@ -34,9 +34,9 @@ export default function RootLayout ({
         <link rel="canonical" href="https://qunacrochet.com" />
       </Head>
       <body>
-        <div className="w-full h-full flex flex-col">
+        <div className="h-dvh grid grid-rows-[auto_1fr_auto] grid-cols-1">
           <Header />
-          <main className="flex-1">
+          <main>
             {children}
           </main>
           <Footer />
