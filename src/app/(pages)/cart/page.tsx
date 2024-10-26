@@ -44,10 +44,10 @@ export default function CartPage () {
     const { address, date, name, surname, district, province, number } = data;
 
     let message = `Hola, Quna.Crochet ✨\n`;
-    message += `Deseo comprar los siguientes productos:\n\n`;
+    message += `Deseo comprar ${cartItems.length === 1 ? 'el siguiente producto' : 'los siguientes productos'}:\n\n`;
 
     cartItems.forEach(product => {
-      message += `• ${product.subtitle}:\n   cantidad: ${product.quantity}\n   precio: S/. ${Number(product.price) * product.quantity}\n`;
+      message += `• ${product.subtitle}:\n   cantidad: ${product.quantity}\n   precio: S/. ${product.princeTo ? Number(product.price) + ' - ' + product.princeTo : Number(product.price) * product.quantity}\n`;
     });
 
     message += `\nLo deseo para el ${date}\n\n`;
@@ -55,7 +55,7 @@ export default function CartPage () {
     message += `- Nombre Completo: ${name} ${surname}\n`;
     message += `- Número: ${number}\n`;
     message += `- Dirección: ${address}\n`;
-    message += `- Distrito y provincia (${district}, ${province})\n`;
+    message += `- Distrito y provincia: ${district}, ${province}\n`;
 
     const encodedMessage = encodeURIComponent(message);
     const phoneNumber = "+51994986182";

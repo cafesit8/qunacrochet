@@ -15,11 +15,11 @@ export default function Footer () {
             <Link href="/reclamaciones" className="block underline text-sm hover:text-white transition-colors">
               Libro de Reclamaciones Virtual
             </Link>
-            <Link href="/terminos-condiciones" className="block underline text-sm hover:text-white transition-colors">
+            <Link href="/politicas" className="block underline text-sm hover:text-white transition-colors">
               Términos y Condiciones
             </Link>
-            <Link href="/politica-devoluciones" className="block underline text-sm hover:text-white transition-colors">
-              Política de Devoluciones
+            <Link href="/politicas" className="block underline text-sm hover:text-white transition-colors">
+              Política de Envío
             </Link>
           </div>
           <div>

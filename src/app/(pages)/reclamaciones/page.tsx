@@ -29,6 +29,7 @@ const LibroDeReclamaciones = () => {
     <div className="w-full bg-white h-full flex items-center text-custom-black py-10">
       <div className="max-w-[1300px] m-auto px-4">
         <h2 className="text-center md:text-4xl text-2xl font-bold mb-2 font-playfair">Libro de Reclamaciones</h2>
+        <p className="text-center mb-5">Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, Ley N° 29571, el sitio web de Quna.Crochet pone a disposición del cliente un Libro de Reclamaciones virtual a fin de que este pueda registrar sus quejas o reclamos formales sobre los servicios ofrecidos a través del portal.</p>
         <p className="text-center mb-5">Completa el siguiente formulario para presentar tu reclamación.</p>
         <form className='max-w-xl m-auto' onSubmit={handleSubmit(onSubmit)}>
           <div>

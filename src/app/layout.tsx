@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Footer from "./sections/footer/Footer";
 import { Toaster } from "sonner";
 import Head from "next/head";
+import { RiWhatsappFill } from "react-icons/ri";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   referrer: "origin-when-cross-origin",
-  keywords: ['quna', 'qunacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas', 'tejidos']
+  keywords: ['quna', 'qunacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas', 'tejidos', 'Quna']
 };
 
 export default function RootLayout ({
@@ -34,11 +35,12 @@ export default function RootLayout ({
         <link rel="canonical" href="https://qunacrochet.com" />
       </Head>
       <body>
-        <div className="h-dvh grid grid-rows-[auto_1fr_auto] grid-cols-1">
+        <div className="relative h-dvh grid grid-rows-[auto_1fr_auto] grid-cols-1">
           <Header />
           <main>
             {children}
           </main>
+          <a className="fixed bottom-4 right-4 rounded-full bg-[#28d367] p-3 z-20" target='_blank' href="https://wa.me/51983214218?text=Hola%2C%20Quna.Crochet%20%E2%9C%A8%0AHe%20visto%20su%20p%C3%A1gina%20y%20deseo%20consultar%20sobre%20un%20producto."><RiWhatsappFill className='md:text-4xl text-xl hover:scale-125 duration-150' /></a>
           <Footer />
           <Toaster richColors position="top-right" />
         </div>
