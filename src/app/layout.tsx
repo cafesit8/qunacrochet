@@ -13,11 +13,8 @@ export const metadata: Metadata = {
     name: "Quna.Crochet",
     url: "https://qunacrochet.com",
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
   referrer: "origin-when-cross-origin",
-  keywords: ['quna', 'qunacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas', 'tejidos', 'Quna']
+  keywords: ['quna', 'qunacrochet', 'crochet', 'tejer', 'tejido', 'regalo', 'maceta', 'macetas', 'tejidos', 'Quna', 'artesanía', 'hecho a mano', 'decoración artesanal', 'flores de crochet', 'flores', 'regalos personalizados', 'artesanos peruanos', 'manualidades', 'productos únicos', 'arte textil', 'accesorios decorativos', 'crochet decorativo', 'flores artificiales', 'detalles únicos', 'crochet Lima', 'personalización crochet']
 };
 
 export default function RootLayout ({
@@ -31,7 +28,7 @@ export default function RootLayout ({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Quna.Crochet" />
-        <link rel="icon" href="/favicon.jpg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="canonical" href="https://qunacrochet.com" />
       </Head>
       <body>
