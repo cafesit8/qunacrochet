@@ -8,8 +8,6 @@ export default function ChooseUs() {
         <article className='[grid-area:personalizacion] p-5 bg-area-bg relative'>
           <h4 className='md:text-5xl text-3xl font-playfair'>Personalización</h4>
           <p className='md:text-base text-sm z-20 relative'>En Quna.Crochet te brindamos diversas opciones para personalizar tu regalo y hacerlo único y especial, como bordados de iniciales, nombres o símbolos.</p>
-          <img className='sm:size-36 size-20 absolute bottom-0 right-5 z-10' width={700} height={700} src="/flor.webp" alt="flor de Qunacrochet" />
-          <img className='sm:size-36 size-20 absolute bottom-0 left-16 z-10' width={700} height={700} src="/flor2.webp" alt="flor de Qunacrochet" />
         </article>
         <article className='[grid-area:materiales] p-5 bg-area-bg'>
           <h4 className='md:text-5xl text-3xl font-playfair'>Calidad</h4>

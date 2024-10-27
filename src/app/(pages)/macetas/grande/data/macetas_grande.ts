@@ -4,7 +4,7 @@ export const macetas_grande: Product[] = [{
   id: crypto.randomUUID(),
   subtitle: 'Tres girasoles en maceta a crochet',
   description: 'Hermoso detalle que cuenta con estructura alambrada en tallo y hojas en una maceta tejida. Todo el diseño mide entre 28 centímetros de alto, aproximadamente 🌻. El precio incluye el bordado de un corazón y/o inicial. *El bordado de un nombre  tiene un costo adicional según la cantidad de letras.',
-  price: '160.00',
+  price: '180.00',
   image: [{
     src: '/macetas/grande/girasoles/1.webp',
     alt: 'tres girasoles en maceta a crochet',

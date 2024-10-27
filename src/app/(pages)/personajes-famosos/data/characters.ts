@@ -3,7 +3,7 @@ import { Product } from "../../interface/Product";
 export const characters: Product[] = [{
   id: crypto.randomUUID(),
   subtitle: 'Personajes',
-  description: 'Personajes famosos del mundo animado',
+  description: 'Personajes famosos del mundo animado. (El precio del producto cambia dependiendo del personaje. Por favor, coordinarlo internamente)',
   price: '50',
   princeTo: '400',
   image: [{

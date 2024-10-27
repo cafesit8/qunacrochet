@@ -26,7 +26,7 @@ export default function Header () {
     <>
       <header className="w-full h-auto bg-primary text-white font-playfair">
         <div className='w-full h-auto bg-[#9c9c9c] flex items-center justify-center gap-4 text-center py-3'>
-          <span className='font-roboto-condensed md:text-lg text-sm'>ENCUÉNTRANOS EN</span>
+          <span className='font-roboto-condensed md:text-lg text-sm'>VISÍTANOS EN</span>
           <ul className='flex gap-3'>
             <li><a target='_blank' href="https://www.facebook.com/profile.php?id=100066974342612&mibextid=ZbWKwL"><MdOutlineFacebook className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>
             <li><a target='_blank' href="https://www.instagram.com/quna.crochet?igsh=djB0enVtbXllZ2E4"><RiInstagramFill className='md:text-3xl text-xl hover:scale-125 duration-150' /></a></li>

@@ -37,7 +37,7 @@ export default function RootLayout ({
           <main>
             {children}
           </main>
-          <a className="fixed bottom-4 right-4 rounded-full bg-[#28d367] p-3 z-20" target='_blank' href="https://wa.me/51983214218?text=Hola%2C%20Quna.Crochet%20%E2%9C%A8%0AHe%20visto%20su%20p%C3%A1gina%20y%20deseo%20consultar%20sobre%20un%20producto."><RiWhatsappFill className='md:text-4xl text-xl hover:scale-125 duration-150' /></a>
+          <a className="fixed bottom-4 right-4 rounded-full bg-[#28d367] p-3 z-20" target='_blank' href="https://wa.me/51983214218?text=Hola%2C%20Quna.Crochet%20%E2%9C%A8%0AHe%20visto%20su%20p%C3%A1gina%20y%20deseo%20consultar%20sobre%20un%20producto."><RiWhatsappFill className='md:text-4xl text-xl text-white hover:scale-125 duration-150' /></a>
           <Footer />
           <Toaster richColors position="top-right" />
         </div>

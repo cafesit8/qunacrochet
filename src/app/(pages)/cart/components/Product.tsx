@@ -66,10 +66,10 @@ export default function ProductItem ({ product, updateQuantity, removeProduct }:
               </button>
             </div>
           </div>
-          {product.princeTo && <span className="md:block hidden text-xs font-semibold text-green-800">Al tener un rango de precio, se tomará el precio menor de momento, el encargado le dirá exactamente el precio de acuerdo al pesonaje que elija</span>}
+          {product.princeTo && <span className="md:block hidden text-xs font-semibold text-green-800">Al tener un rango de precios, se tomará como referencia el de menor valor, el encargado le dirá exactamente el costo del personaje que elija</span>}
         </div>
       </div>
-      {product.princeTo && <span className="md:hidden text-xs font-semibold text-green-800">Al tener un rango de precio, se tomará el precio menor de momento, el encargado le dirá exactamente el precio de acuerdo al pesonaje que elija</span>}
+      {product.princeTo && <span className="md:hidden text-xs font-semibold text-green-800">Al tener un rango de precios, se tomará como referencia el de menor valor, el encargado le dirá exactamente el costo del personaje que elija</span>}
     </article>
   )
 }
