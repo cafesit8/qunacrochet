@@ -23,7 +23,7 @@ export default function Footer () {
             </Link>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4">Síguenos en nuestras redes sociales:</h3>
+            <h3 className="text-white font-semibold mb-2">Síguenos en nuestras redes sociales:</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com/qunacrochet" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
                 <MdOutlineFacebook size={30} />
@@ -41,6 +41,9 @@ export default function Footer () {
                 <RiTiktokFill size={30} />
                 <span className="sr-only">TikTok</span>
               </a>
+            </div>
+            <div className="pt-2">
+              <p>Ruc: 10067128015</p>
             </div>
           </div>
         </div>
