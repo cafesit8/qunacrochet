@@ -6,6 +6,8 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 interface Claim {
   name: string;
+  surname: string;
+  dni: number;
   claim: string;
 }
 
@@ -40,6 +42,25 @@ const LibroDeReclamaciones = () => {
               isInvalid={Boolean(errors.name)}
               errorMessage="Debe ingresar nombre"
               {...register('name', { required: true })} />
+          </div>
+          <div>
+            <Input
+              fullWidth
+              size="sm"
+              label="Apellidos"
+              isInvalid={Boolean(errors.surname)}
+              errorMessage="Debe ingresar su apellido"
+              {...register('surname', { required: true })} />
+          </div>
+          <div>
+            <Input
+              fullWidth
+              size="sm"
+              label="DNI"
+              isInvalid={Boolean(errors.dni)}
+              type='number'
+              errorMessage="Debe ingresar un DNI válido"
+              {...register('dni', { required: true, minLength: 8, maxLength: 8 })} />
           </div>
           <div>
             <Textarea
