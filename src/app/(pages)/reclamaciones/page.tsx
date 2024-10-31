@@ -92,7 +92,7 @@ const LibroDeReclamaciones = () => {
               items={[{ key: 'queja', label: 'Queja' }, { key: 'reclamo', label: 'Reclamo' }]}
               defaultSelectedKeys={['queja']}
               label="Seleccione"
-              className="max-w-xs"
+              className="w-full"
               {...register('claimType', { required: true })}
             >
               {(animal) => <SelectItem key={animal.key} className='text-custom-black'>{animal.label}</SelectItem>}
