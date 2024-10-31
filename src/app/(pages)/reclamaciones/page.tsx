@@ -3,25 +3,40 @@ import { useForm } from 'react-hook-form';
 import { Input, Textarea } from '@nextui-org/input'
 import { Button } from '@nextui-org/button'
 import { FaWhatsapp } from "react-icons/fa6";
+import { Select, SelectItem } from '@nextui-org/select'
 
 interface Claim {
   name: string;
   surname: string;
   dni: number;
+  producto: string;
+  claimType: string;
   claim: string;
 }
 
 const LibroDeReclamaciones = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<Claim>();
+  const { register, handleSubmit, formState: { errors } } = useForm<Claim>({
+    defaultValues: {
+      name: '',
+      surname: '',
+      producto: '',
+      claimType: 'Queja',
+      claim: '',
+    }
+  });
 
   const onSubmit = (data: Claim) => {
     // Formato del mensaje para WhatsApp
-    const message = `*Reclamación*%0A` +
-      `Nombre: ${data.name}%0A` +
-      `Reclamación: ${data.claim}`;
+    const message =
+      `Nombre: ${data.name}\n` +
+      `Apellidos: ${data.surname}\n` +
+      `DNI: ${data.dni}\n` +
+      `Producto: ${data.producto}\n` +
+      `Tipo de reclamo: ${data.claimType}\n` +
+      `Descripción del reclamo: ${data.claim}`;
 
     // Enlace de WhatsApp
-    const whatsappUrl = `https://wa.me/521234567890?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+51994986182?text=${encodeURIComponent(message)}`;
 
     // Redirigir a WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -61,6 +76,27 @@ const LibroDeReclamaciones = () => {
               type='number'
               errorMessage="Debe ingresar un DNI válido"
               {...register('dni', { required: true, minLength: 8, maxLength: 8 })} />
+          </div>
+          <div>
+            <Input
+              fullWidth
+              size="sm"
+              label="Producto"
+              isInvalid={Boolean(errors.producto)}
+              errorMessage="Debe ingresar el nombre del producto"
+              {...register('producto', { required: true })} />
+          </div>
+          <div className='mb-3'>
+            <Select
+              isRequired
+              items={[{ key: 'queja', label: 'Queja' }, { key: 'reclamo', label: 'Reclamo' }]}
+              defaultSelectedKeys={['queja']}
+              label="Seleccione"
+              className="max-w-xs"
+              {...register('claimType', { required: true })}
+            >
+              {(animal) => <SelectItem key={animal.key} className='text-custom-black'>{animal.label}</SelectItem>}
+            </Select>
           </div>
           <div>
             <Textarea
