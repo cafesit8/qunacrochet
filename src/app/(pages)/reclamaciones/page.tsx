@@ -36,7 +36,7 @@ const LibroDeReclamaciones = () => {
       `Descripción del reclamo: ${data.claim}`;
 
     // Enlace de WhatsApp
-    const whatsappUrl = `https://wa.me/+51994986182?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+51983214218?text=${encodeURIComponent(message)}`;
 
     // Redirigir a WhatsApp
     window.open(whatsappUrl, '_blank');
