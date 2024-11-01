@@ -58,7 +58,7 @@ export default function CartPage () {
     message += `- Distrito y provincia: ${district}, ${province}\n`;
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "+51994986182";
+    const phoneNumber = "+51983214218";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
     window.open(url, "_blank");
