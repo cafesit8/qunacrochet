@@ -25,19 +25,19 @@ export default function Footer () {
           <div>
             <h3 className="text-white font-semibold mb-2">Síguenos en nuestras redes sociales:</h3>
             <div className="flex space-x-4">
-              <a href="https://facebook.com/qunacrochet" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
+              <a href="https://www.facebook.com/profile.php?id=100066974342612&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
                 <MdOutlineFacebook size={30} />
                 <span className="sr-only">Facebook</span>
               </a>
-              <a href="https://instagram.com/qunacrochet" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
+              <a href="https://www.instagram.com/quna.crochet?igsh=djB0enVtbXllZ2E4" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
                 <RiInstagramFill size={30} />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
+              <a href="https://wa.me/51983214218?text=Hola%2C%20Quna.Crochet%20%E2%9C%A8%0AHe%20visto%20su%20p%C3%A1gina%20y%20deseo%20consultar%20sobre%20un%20producto." target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
                 <RiWhatsappFill size={30} />
                 <span className="sr-only">WhatsApp</span>
               </a>
-              <a href="https://tiktok.com/@qunacrochet" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
+              <a href="https://www.tiktok.com/@quna.crochet?_t=8qkGthWXHgz&_r=1" target="_blank" rel="noopener noreferrer" className="hover:scale-125 duration-150">
                 <RiTiktokFill size={30} />
                 <span className="sr-only">TikTok</span>
               </a>
