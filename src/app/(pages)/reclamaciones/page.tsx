@@ -102,7 +102,7 @@ const LibroDeReclamaciones = () => {
             <Textarea
               fullWidth
               size="sm"
-              label="Reclamación"
+              label="Descripción del reclamo"
               isInvalid={Boolean(errors.claim)}
               errorMessage="Debe ingresar su reclamación"
               {...register('claim', { required: true })}
