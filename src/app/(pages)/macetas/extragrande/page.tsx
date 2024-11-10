@@ -6,7 +6,7 @@ export default function MacetaExtraGrandePage () {
     <div className="w-full bg-white text-custom-black py-10">
       <div className="max-w-[1300px] m-auto px-4">
         <h1 className="md:text-6xl text-4xl text-center font-playfair">Macetas Extra Grande</h1>
-        <p className="text-center md:text-base text-sm mt-2">Para la descripción general que va antes de los productos:
+        <p className="text-center md:text-base text-sm mt-2">
           Las flores más bellas en macetas eternas, perfectas para decorar todos los espacios de la casa, oficina, entre otros 🤗
           La maceta va dentro de una caja decorada por dentro con papel seda, listas para regalar 🎁
         </p>
