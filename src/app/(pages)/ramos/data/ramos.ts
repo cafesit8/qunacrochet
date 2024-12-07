@@ -196,7 +196,7 @@ export const ramos: Product[] = [{
   id: crypto.randomUUID(),
   subtitle: 'Ramo de 4 rosas realistas tejidas a crochet',
   description: 'Hermoso ramo con cuatro rosas realistas de nueve pétalos cada una. Están tejidas a crochet y cuentan con estructura alambrada en tallo y hojas. La flor mide 34 centímetros de largo aprox y está hecha 100% a mano',
-  price: '108.00',
+  price: '205.00',
   image: [{
     src: '/ramos/rosa-4/1.webp',
     alt: 'ramo de 4 rosas realistas de qunacrochet',
